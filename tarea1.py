@@ -11,14 +11,14 @@ def fMM(x, mu, KD):
 
 def fH(x, mu, KD, nH):
     """Hill like equation"""
-    return mu * (x**nH / (x**nH + KD**nH)) #solo es conveniente definirla si la uso muchas veces 
+    return mu * (x**nH / (x**nH + KD**nH))
 
 def myODE_MM(t, x, k1, k2, k3, k4, n, mu, alpha):
     """Sistema de ecuaciones diferenciales para Michaelis-Menten"""
     A, B, C = x
     dAdt = (k1*E) - (k4*A)
     dBdt = (k2*A) - (k4*B)
-    dCdt = mu * ( alpha + (1 - alpha) * ((A^n + B^n) / (A^n + B^n + KD^n)) ) - (k4*C) #aqui también esta la de hill
+    dCdt = mu * ( alpha + (1 - alpha) * ((A^n + B^n) / (A^n + B^n + KD^n)) ) - (k4*C) #aqui también esta la de
     return [dAdt, dBdt, dCdt]
 
 
@@ -27,13 +27,13 @@ def myODE_MM(t, x, k1, k2, k3, k4, n, mu, alpha):
 # ========================
 # Simulación ODE Michaelis-Menten
 # ========================
-k1 = 
-k2 = 
-k3 = 
-k4 = 
-n = 
-mu= 
-alpha =
+#k1 =
+#k2 = 
+#k3 = 
+#k4 = 
+#n = 
+#mu= 
+#alpha =
 
 S0 = 10000 # nM
 E0 = 20    # nM
