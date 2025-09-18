@@ -62,3 +62,4 @@ plt.xlabel("Tiempo")
 plt.ylabel("Cantidad de X (mRNA)")
 plt.title("Simulación Algoritmo de Gillespie")
 plt.show()
+##
