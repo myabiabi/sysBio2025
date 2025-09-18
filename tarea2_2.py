@@ -71,6 +71,8 @@ while t_0[-1] < t_max: #el indice -1 llama al utlimo elemento del vector t, el c
         else:
             X_0.append(current_X - 1)
 
+
+
 plt.plot(t_0, X_0, drawstyle="steps-post")
 plt.xlabel("Tiempo")
 plt.ylabel("Cantidad de X (mRNA)")
