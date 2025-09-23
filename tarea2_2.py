@@ -59,7 +59,6 @@ while t_0[-1] < t_max: #el indice -1 llama al utlimo elemento del vector t, el c
         r1 = random.random()
         tau = (1.0 / rate_sum) * math.log(1.0 / r1)
         t_0.append(t_0[-1] + tau)
-
 #3. elegir que reacción ocurre
 #random.uniform regresa un numero random entre dos numeros especificados, incluyendolos, esto se multiplica por la suma de la propensidades
 #por lo que al final da un número de entre 0 y la sema de las propensidades
